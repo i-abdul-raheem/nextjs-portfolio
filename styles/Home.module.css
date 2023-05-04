@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@700&family=Poppins:wght@300&display=swap");
+
 .main {
   display: flex;
   flex-direction: column;
@@ -15,7 +17,7 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
+  font-family: 'Poppins', sans-serif;
 }
 
 .description a {
@@ -36,7 +38,7 @@
 
 .code {
   font-weight: 700;
-  font-family: var(--font-mono);
+  font-family: 'Poppins', sans-serif;
 }
 
 .grid {
