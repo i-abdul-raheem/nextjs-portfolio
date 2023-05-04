@@ -35,9 +35,9 @@ export const Introduction = () => {
             <code>
               <b>ABDUL RAHEEM</b>
             </code>
-            . I'm an experienced Software Engineer with 3+ years in the field,
-            specializing in designing and developing software solutions that
-            meet business needs. Skilled in various programming languages,
+            . I{"'"}m an experienced Software Engineer with 3+ years in the
+            field, specializing in designing and developing software solutions
+            that meet business needs. Skilled in various programming languages,
             including Java, Python, and JavaScript. Adept at collaborating with
             cross-functional teams to identify and solve complex technical
             problems. Passionate about staying up-to-date with the latest
