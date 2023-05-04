@@ -23,5 +23,6 @@ export const Container = styled(Box)(() => {
     top: 78,
     right: 0,
     display: isMobileView ? "block" : "none",
+    zIndex: 20,
   };
 });

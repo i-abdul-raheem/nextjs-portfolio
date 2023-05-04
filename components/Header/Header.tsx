@@ -76,8 +76,20 @@ export const Header = () => {
             "aria-labelledby": "basic-button",
           }}
         >
-          <MenuItem onClick={handleClose}>PDF</MenuItem>
-          <MenuItem onClick={handleClose}>JSON</MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose();
+            }}
+          >
+            PDF
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose();
+            }}
+          >
+            JSON
+          </MenuItem>
         </CustomMenu>
         <MenuButton
           onClick={() => {
