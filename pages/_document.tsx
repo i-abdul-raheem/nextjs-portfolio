@@ -14,6 +14,8 @@ export default function Document() {
           margin: 0,
           padding: 0,
           boxSizing: "border-box",
+          backgroundColor: "#111",
+          color: "#fff"
         }}
       >
         <Main />
