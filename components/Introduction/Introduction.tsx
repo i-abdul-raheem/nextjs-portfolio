@@ -4,24 +4,44 @@ import { GitHub, LinkedIn, Mail } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { ImageBox, LinkContainer, Row } from "./elements";
 
 export const Introduction = () => {
+  const [hoverState, setHoverState] = useState(false);
   return (
     <Container>
       <Row>
-        <ImageBox>
-          <Image
-            src={MyPic}
-            alt={"Abdul Raheem - MERN STACK DEVELOPER - CODE TEMPLATE"}
-            style={{
-              filter: "grayscale(100%)",
-              width: "auto",
-              height: "auto",
-              boxShadow: "0px 5px 30px #333",
-              borderRadius: "50%",
-            }}
-          />
+        <ImageBox
+          onMouseEnter={() => setHoverState(true)}
+          onMouseLeave={() => setHoverState(false)}
+        >
+          {!hoverState ? (
+            <Image
+              src={MyPic}
+              alt={"Abdul Raheem - MERN STACK DEVELOPER - CODE TEMPLATE"}
+              style={{
+                filter: "grayscale(100%)",
+                width: "auto",
+                height: "auto",
+                boxShadow: "0px 5px 30px #333",
+                borderRadius: "50%",
+                zIndex: 999,
+              }}
+            />
+          ) : (
+            <Image
+              src={MyPic}
+              alt={"Abdul Raheem - MERN STACK DEVELOPER - CODE TEMPLATE"}
+              style={{
+                width: "auto",
+                height: "auto",
+                boxShadow: "0px 5px 30px dodgerblue",
+                borderRadius: "50%",
+                zIndex: 999,
+              }}
+            />
+          )}
         </ImageBox>
         <Box
           sx={{
