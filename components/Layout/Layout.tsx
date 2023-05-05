@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { Footer } from "../Footer";
 import { Header } from "../Header";
 
 type Props = {
@@ -9,6 +11,7 @@ export const Layout = ({ children }: Props) => {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };

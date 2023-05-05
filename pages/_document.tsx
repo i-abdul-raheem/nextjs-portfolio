@@ -15,7 +15,8 @@ export default function Document() {
           padding: 0,
           boxSizing: "border-box",
           backgroundColor: "#111",
-          color: "#fff"
+          color: "#fff",
+          cursor: "none",
         }}
       >
         <Main />

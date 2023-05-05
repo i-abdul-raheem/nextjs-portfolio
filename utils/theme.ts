@@ -10,5 +10,6 @@ export const Container = styled(Box)(() => {
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
+    height: "auto",
   };
 });
